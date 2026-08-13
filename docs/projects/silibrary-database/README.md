@@ -30,11 +30,11 @@ Raffata contributed to the Entity Relationship Diagram, the relational model, an
 
 ## Evidence
 
-The project evidence is currently presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). Add a cropped ERD or MySQL Workbench screenshot to this repository when the source folder is ready.
+The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary ERD evidence assets.
 
 ## Code availability
 
-This README is a documentation page inside Raffata's public portfolio repository. The original Workbench model and SQL export are not included here yet, so no import command or MySQL version is claimed. Those details belong in a dedicated repository once the course files are sanitized and organized.
+This README is a documentation page inside Raffata's public portfolio repository. The original Workbench model and SQL export are outside this documentation snapshot, so no import command or MySQL version is claimed. This keeps the public README accurate about what a recruiter can inspect today.
 
 ## Notes
 

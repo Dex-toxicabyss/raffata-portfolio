@@ -18,7 +18,7 @@ The system supports adding, editing, deleting, and managing product records. Use
 
 ## Raffata's contribution
 
-Raffata contributed as a member of the project team. The verified project scope includes the product CRUD flow, search and category filtering, input validation, array-based product handling, and structured control flow. When the source repository is published, this section should be updated with the exact modules authored by each team member.
+Raffata contributed as a member of the project team. The verified project scope includes the product CRUD flow, search and category filtering, input validation, array-based product handling, and structured control flow. The public documentation describes Raffata's verified team-level contribution; it does not claim module-level authorship that has not been documented.
 
 ## Concepts practiced
 
@@ -30,7 +30,7 @@ Raffata contributed as a member of the project team. The verified project scope 
 
 ## Evidence
 
-The project evidence is currently presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). Add a repository screenshot or short demo GIF here when the source code repository is ready.
+The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary evidence assets.
 
 ## Code availability
 

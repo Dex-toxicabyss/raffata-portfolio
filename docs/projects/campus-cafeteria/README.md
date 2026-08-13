@@ -31,11 +31,11 @@ Raffata created this system as part of the PBO course. The project is presented 
 
 ## Evidence
 
-The project evidence is currently presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). Add a source-code screenshot or short console recording here when the repository is ready.
+The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary evidence assets.
 
 ## Code availability
 
-This README is a documentation page inside Raffata's public portfolio repository; the original course source code is not included here yet. No JDK version or compile command is claimed until the source is sanitized, organized, and published in a dedicated repository.
+This README is a documentation page inside Raffata's public portfolio repository; the original course source code is outside this documentation snapshot. No JDK version or compile command is claimed, so the public README stays accurate about what a recruiter can inspect today.
 
 ## Notes
 
