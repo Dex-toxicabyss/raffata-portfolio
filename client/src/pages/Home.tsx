@@ -2,7 +2,7 @@
  * Quiet Silicon design reminder: Apple-style premium restraint, porcelain surfaces,
  * Signal Indigo accents, editorial whitespace, and project evidence over decoration.
  */
-import { ArrowDown, ArrowUpRight, CheckCircle2, ChevronRight, Mail, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, CheckCircle2, ChevronRight, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -14,8 +14,9 @@ const projectData = [
     stack: ["C#", ".NET Console", "CRUD"],
     copy: "A console-based product system built to keep inventory operations deliberate and structured—from search and category filtering to safe input handling.",
     details: ["Product CRUD", "Search & category filtering", "Array-based data management"],
-    image: "/manus-storage/raffata-csharp-product-system_e95f1d6c.jpg",
+    image: "/manus-storage/raffata-csharp-project-evidence_34b0dadb.jpg",
     className: "project-csharp",
+    readme: "https://github.com/Dex-toxicabyss/raffata-portfolio/tree/main/docs/projects/ecommerce-product-management",
   },
   {
     number: "02",
@@ -24,8 +25,9 @@ const projectData = [
     stack: ["MySQL", "ERD", "8 Entities"],
     copy: "A relational library system designed around the connections that matter: catalog, members, staff, lending, returns, and penalties.",
     details: ["Chen ERD", "Relational modelling", "1:1 · 1:N · M:N relationships"],
-    image: "/manus-storage/raffata-mysql-library-system_6455cf53.jpg",
+    image: "/manus-storage/raffata-silibrary-erd-evidence_519a7c06.png",
     className: "project-mysql",
+    readme: "https://github.com/Dex-toxicabyss/raffata-portfolio/tree/main/docs/projects/silibrary-database",
   },
   {
     number: "03",
@@ -34,8 +36,9 @@ const projectData = [
     stack: ["Java", "OOP", "File I/O"],
     copy: "A menu-selection and order-recording system that translated object-oriented principles into a focused, functional campus scenario.",
     details: ["Interfaces & inheritance", "ArrayList + HashMap", "Exception handling"],
-    image: "/manus-storage/raffata-java-cafeteria-system_d42c9561.jpg",
+    image: "/manus-storage/raffata-java-oop-evidence_dffd4e72.png",
     className: "project-java",
+    readme: "https://github.com/Dex-toxicabyss/raffata-portfolio/tree/main/docs/projects/campus-cafeteria",
   },
 ];
 
@@ -51,11 +54,6 @@ export default function Home() {
     });
   };
 
-  const showRepositoryNotice = (project: string) => {
-    toast("Repository in preparation", {
-      description: `${project} is being cleaned up for GitHub.`,
-    });
-  };
 
   return (
     <div className="site-shell">
@@ -93,9 +91,9 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-object reveal-delay">
-            <div className="object-label top-label">RAFFATA / 01</div>
-            <img src="/manus-storage/raffata-hero-system-rails_38df4281.jpg" alt="Abstract precision rails personal mark" />
-            <div className="object-label bottom-label">INFORMATION SYSTEMS<br />TELKOM UNIVERSITY</div>
+            <div className="object-label top-label">PROJECT EVIDENCE / 01</div>
+            <img src="/manus-storage/raffata-csharp-project-evidence_34b0dadb.jpg" alt="C# product management system project evidence" />
+            <div className="object-label bottom-label">E-COMMERCE PRODUCT SYSTEM<br />C# / .NET CONSOLE</div>
           </div>
         </section>
 
@@ -125,16 +123,16 @@ export default function Home() {
                   <div className="project-tags">
                     {project.stack.map((item) => <span key={item}>{item}</span>)}
                   </div>
-                  <button type="button" className="project-note" onClick={() => showRepositoryNotice(project.title.replace("\n", " "))}>
-                    Repository status <ArrowUpRight size={13} />
-                  </button>
+                  <a href={project.readme} target="_blank" rel="noreferrer" className="project-note">
+                    Read project notes <ArrowUpRight size={13} />
+                  </a>
                   <ul>
                     {project.details.map((detail) => <li key={detail}><CheckCircle2 size={15} />{detail}</li>)}
                   </ul>
                 </div>
                 <div className="project-visual">
                   <img src={project.image} alt={`${project.title.replace("\n", " ")} project visual`} />
-                  <div className="image-count">0{index + 1} / 03</div>
+                  <div className="image-count">SOURCE EVIDENCE · 0{index + 1} / 03</div>
                 </div>
               </article>
             ))}
