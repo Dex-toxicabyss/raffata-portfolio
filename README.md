@@ -1,34 +1,42 @@
-# Raffata Izacky — Portfolio
+# Raffata Izacky Yuargya Aletama — Portfolio Hub
 
-A focused personal portfolio for **Raffata Izacky Yuargya Aletama**, an Information Systems student at Telkom University preparing for a Semester 4 internship.
+This repository is the central index for **Raffata Izacky Yuargya Aletama**, an Information Systems student at Telkom University preparing for a Semester 4 internship. It connects the live portfolio website to the academic projects that show his current software, database, and object-oriented programming foundation.
 
-## What this portfolio presents
+> **Start here:** [View the live portfolio](https://raffataport-rw6twnsp.manus.space) · [Browse the project index](docs/PROJECT_INDEX.md) · [Email Raffata](mailto:raffataizacky@gmail.com)
 
-The site documents three academic systems through a quick visual summary and project-level documentation:
+## Selected work
 
-| Project | Stack | Evidence |
+| Project | What to inspect | Source / project page |
 | --- | --- | --- |
-| [E-Commerce Product Management System](docs/projects/ecommerce-product-management/README.md) | C# / .NET Console | Product CRUD, search, category filtering, validation |
-| [SiLibrary Digital Library Database](docs/projects/silibrary-database/README.md) | MySQL / relational design | ERD, relational model, cardinality, 8 entities |
-| [Campus Cafeteria System](docs/projects/campus-cafeteria/README.md) | Java / OOP | Abstraction, interfaces, inheritance, collections, file I/O |
+| **Portfolio Website** | React + TypeScript personal portfolio, project evidence, credentials, and contact path. | [Live website](https://raffataport-rw6twnsp.manus.space) · [This repository](.) |
+| **E-Commerce Product Management System** | C# console product CRUD, search, category filtering, validation, and team-project documentation. | [Source repository](https://github.com/Dex-toxicabyss/ecommerce-product-management-system) · [Project note](docs/projects/ecommerce-product-management/README.md) |
+| **SiLibrary Database** | Importable MySQL schema, seed data, procedures, triggers, demo queries, and database-design context. | [Source repository](https://github.com/Dex-toxicabyss/silibrary-database) · [Project note](docs/projects/silibrary-database/README.md) |
+| **Campus Cafeteria System — Week 14** | Java OOP lab implementation: abstraction, interface, inheritance, polymorphism, transactions, and exception handling. | [Source repository](https://github.com/Dex-toxicabyss/campus-cafeteria-system) · [Project note](docs/projects/campus-cafeteria/README.md) |
+| **GarudaEats — PBO 1** | Java console assignment focused on classes, encapsulation, array objects, constructor overloading, wallet payment, stock, and order states. | [Source repository](https://github.com/Dex-toxicabyss/garudaeats-campus-ordering-system) · [Project note](docs/projects/garudaeats/README.md) |
 
-The portfolio also includes the verified **Google AI Professional Certificate** and direct contact details. The site is an overview; the linked READMEs are the technical layer behind each project.
+## Review path
 
-## Run locally
+For a quick review, start with the **live portfolio** for the visual overview, then open the C# or Java source repository for runnable code. The MySQL repository provides the database-design layer. Each project note explains the academic context, the technology in use, the public artifact available to inspect, and any scope boundary worth knowing.
+
+## Repository map
+
+```text
+client/        React + TypeScript portfolio application
+docs/          Project notes, recruiter-facing index, research, and audit records
+docs/projects/ Focused context for each academic project
+```
+
+## Run the portfolio locally
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-## Documentation standard
+## Scope and documentation standard
 
-Each project README uses the same recruiter-friendly shape: a one-paragraph overview, a project snapshot, verified contribution, concepts practiced, evidence, setup status, and notes about academic scope. Source code and runnable commands will be added only when the relevant repositories are ready; the documentation intentionally avoids inventing demos, metrics, or repository URLs.
+This repository is a **portfolio hub**, not a monorepo containing every academic codebase. Dedicated project repositories keep each assignment runnable and preserve its own course-specific structure. The documentation follows a proof-led standard: it links to inspectable artifacts, states actual academic context, and avoids claiming individual module ownership, production status, or unavailable historical source files.
 
-## Repository hygiene before publishing projects
+## Curating the GitHub profile
 
-Keep only projects that you are comfortable attaching to your name. Add a clear README, a focused commit history, a screenshot or demo when available, and copy-paste-ready setup instructions. Never commit credentials, local environment files, generated build folders, or unrelated course materials.
-
-## Technology
-
-React, TypeScript, Vite, Tailwind CSS, Sonner, and a small set of accessible UI components.
+For internship review, pin a small number of finished public repositories rather than every course exercise. A practical pin set is: this portfolio hub, the C# system, the SiLibrary database, the Week 14 Java system, and GarudaEats. The research behind this curation is documented in [repository-pattern notes](docs/research_repository_patterns.md).

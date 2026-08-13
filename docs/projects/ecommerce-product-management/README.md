@@ -10,7 +10,7 @@ A console-based product management system created for an Algorithm and Programmi
 | Year | 2025 |
 | Stack | C#, .NET Console |
 | Focus | Product CRUD, search, category filtering, input validation |
-| Status | Documentation-only project note |
+| Public artifact | [Source repository](https://github.com/Dex-toxicabyss/ecommerce-product-management-system) |
 
 ## What it does
 
@@ -18,24 +18,12 @@ The system supports adding, editing, deleting, and managing product records. Use
 
 ## Raffata's contribution
 
-Raffata contributed as a member of the project team. The verified project scope includes the product CRUD flow, search and category filtering, input validation, array-based product handling, and structured control flow. The public documentation describes Raffata's verified team-level contribution; it does not claim module-level authorship that has not been documented.
+Raffata contributed as a member of the project team. The verified project scope includes the product CRUD flow, search and category filtering, input validation, array-based product handling, and structured control flow. This documentation describes Raffata's verified team-level contribution; it does not claim module-level authorship that has not been documented.
 
-## Concepts practiced
+## What a reviewer can inspect
 
-- CRUD-oriented application flow
-- Input validation in a console interface
-- Array-based data handling
-- Conditional logic and control flow
-- Team collaboration and project documentation
-
-## Evidence
-
-The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary evidence assets.
-
-## Code availability
-
-This README is a documentation page inside Raffata's public portfolio repository; the original course source code is not included here yet. No run command is claimed until the source is sanitized, organized, and published in a dedicated repository.
+The dedicated repository contains the sanitized C# source and a recruiter-ready README. The portfolio presents project evidence visually; the source repository is the appropriate place to inspect implementation and run instructions.
 
 ## Notes
 
-This is an academic project, not a production e-commerce platform. Its purpose is to demonstrate programming fundamentals and structured problem solving.
+This is an academic team project, not a production e-commerce platform. The original upstream attribution remains documented in the source repository.

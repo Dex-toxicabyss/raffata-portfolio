@@ -1,42 +1,25 @@
-# Campus Cafeteria System
+# Campus Cafeteria System — Lab OOP Week 14
 
-A Java console project created for an Object-Oriented Programming course. The system models a campus cafeteria scenario around menu selection, order records, and beverage objects.
+A runnable Java console implementation of the Week 14 guided Object-Oriented Programming lab. The system models a campus cafeteria with menu products, transactions, stock checks, food-discount rules, and controlled failure scenarios.
 
 ## Project snapshot
 
 | Item | Detail |
 | --- | --- |
-| Context | Academic PBO project |
+| Context | Guided PBO lab — Week 14 |
 | Year | 2026 |
-| Stack | Java |
-| Focus | Menu objects, order flow, OOP concepts, file output |
-| Status | Documentation-only project note |
+| Stack | Java, BlueJ-compatible default package |
+| Focus | Abstraction, interface, inheritance, polymorphism, `ArrayList`, and custom exceptions |
+| Public artifact | [Source repository](https://github.com/Dex-toxicabyss/campus-cafeteria-system) |
 
 ## What it demonstrates
 
-The project applies object-oriented design to a cafeteria workflow. The model uses an abstract `Minuman` class, a `Toppingable` interface, encapsulation through private fields and accessors, and concrete beverage behavior. Collection structures such as `ArrayList` and `HashMap` support menu and order data, while exception handling and file I/O support safer input and order persistence.
+`Produk` is an abstract base class; `Makanan` and `Minuman` provide subtype behavior; and `Makanan` implements the `Diskonable` contract. `Transaksi` stores products and quantities in paired `ArrayList`s, calculates post-discount totals, reduces stock, and prints a receipt. The project also demonstrates specific catch, multi-catch, parent-class catch, and `finally` behavior using a custom exception hierarchy.
 
-## Raffata's project context
+## What a reviewer can inspect
 
-Raffata created this system as part of the PBO course. The project is presented as a learning build: it demonstrates how classes, abstract behavior, interfaces, inheritance, polymorphism, collections, and file handling can work together in a small domain system.
-
-## Concepts practiced
-
-- Abstraction through an abstract base class
-- Interfaces and implementation contracts
-- Encapsulation with private state and public methods
-- Inheritance and polymorphic behavior
-- `ArrayList` and `HashMap` collection handling
-- Input validation, exception handling, and file I/O
-
-## Evidence
-
-The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary evidence assets.
-
-## Code availability
-
-This README is a documentation page inside Raffata's public portfolio repository; the original course source code is outside this documentation snapshot. No JDK version or compile command is claimed, so the public README stays accurate about what a recruiter can inspect today.
+The source repository includes the runnable Java code, a class diagram, a BlueJ guide, requirement traceability, and testing notes. The README keeps the original course structure visible instead of adding framework layers that would make the lab harder to assess.
 
 ## Notes
 
-This is an academic PBO project. It is intentionally scoped as a focused console system rather than a production ordering platform.
+The original source file was unavailable. The public implementation is a course-aligned reconstruction based on the supplied Week 14 brief, not a claim that it is the exact historical submission.

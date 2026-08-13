@@ -7,35 +7,22 @@ SiLibrary is an academic digital-library information system designed as a relati
 | Item | Detail |
 | --- | --- |
 | Context | Academic team project — Database Systems course |
-| Stack | MySQL Workbench / relational database design |
-| Scope | ERD, relational model, lending and return relationships |
-| Data model | 8 primary entities with 1:1, 1:N, and M:N relationships |
-| Status | Documentation-only database project note |
+| Stack | MySQL 8 / relational database design |
+| Design focus | ERD, relational model, lending and return relationships |
+| Public artifact | [Importable SQL repository](https://github.com/Dex-toxicabyss/silibrary-database) |
 
 ## System model
 
-The reported model includes `Kategori`, `Penulis`, `Buku`, `Anggota`, `Petugas`, `Peminjaman`, `Pengembalian`, and `Denda`. A book-to-author many-to-many relationship is represented through the `Buku_Penulis` junction table. The lending model connects members and staff to borrowing transactions, while returns and penalties extend the borrowing flow.
+The course report describes `Kategori`, `Penulis`, `Buku`, `Anggota`, `Petugas`, `Peminjaman`, `Pengembalian`, and `Denda`. A book-to-author many-to-many relationship is represented through the `Buku_Penulis` junction table. The lending model connects members and staff to borrowing transactions, while returns and penalties extend the borrowing flow.
 
 ## Raffata's contribution
 
 Raffata contributed to the Entity Relationship Diagram, the relational model, and the project documentation for Chapters 1 and 2. His work focused on defining entities and attributes, translating relationships into relational form, documenting cardinality, and clarifying the business rules behind lending and returns.
 
-## Concepts practiced
+## What a reviewer can inspect
 
-- Entity Relationship Diagramming with Chen notation
-- Relational model transformation
-- Primary keys, foreign keys, and junction-table thinking
-- Cardinality: 1:1, 1:N, and M:N
-- Database documentation and business-rule communication
-
-## Evidence
-
-The project evidence is presented on the [Raffata portfolio](https://raffataport-rw6twnsp.manus.space). This README intentionally stays lightweight and does not duplicate the portfolio's binary ERD evidence assets.
-
-## Code availability
-
-This README is a documentation page inside Raffata's public portfolio repository. The original Workbench model and SQL export are outside this documentation snapshot, so no import command or MySQL version is claimed. This keeps the public README accurate about what a recruiter can inspect today.
+The dedicated repository provides a runnable, course-aligned MySQL implementation with schema, seed data, stored procedures, triggers, demo queries, and example access-control statements. Because the original export was unavailable, that implementation is presented honestly as a reconstruction grounded in the course report; it does not rewrite the project’s team contribution record.
 
 ## Notes
 
-This is an academic database-design project. The contribution section intentionally distinguishes Raffata's ERD/model/documentation work from SQL implementation work completed by other members.
+This is an academic database-design project. The contribution section intentionally distinguishes Raffata's ERD/model/documentation work from implementation work originally completed by other team members.
