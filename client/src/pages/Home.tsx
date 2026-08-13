@@ -4,6 +4,7 @@
  */
 import { ArrowDown, ArrowUpRight, CheckCircle2, ChevronRight, Mail, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const projectData = [
   {
@@ -43,6 +44,19 @@ function RailMark({ className = "" }: { className?: string }) {
 }
 
 export default function Home() {
+  const copyEmail = () => {
+    void navigator.clipboard?.writeText("raffataizacky@gmail.com");
+    toast.success("Email copied", {
+      description: "raffataizacky@gmail.com is ready to paste.",
+    });
+  };
+
+  const showRepositoryNotice = (project: string) => {
+    toast("Repository in preparation", {
+      description: `${project} is being cleaned up for GitHub.`,
+    });
+  };
+
   return (
     <div className="site-shell">
       <header className="site-header">
@@ -55,9 +69,9 @@ export default function Home() {
           <a href="#credentials">Credentials</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="mailto:raffataizacky@gmail.com" className="header-contact">
-          Let&apos;s talk <ArrowUpRight size={15} />
-        </a>
+        <button type="button" onClick={copyEmail} className="header-contact">
+          Copy email <ArrowUpRight size={15} />
+        </button>
       </header>
 
       <main id="top">
@@ -70,7 +84,7 @@ export default function Home() {
               <Button asChild className="primary-cta">
                 <a href="#work">Explore selected work <ArrowDown size={16} /></a>
               </Button>
-              <a className="text-cta" href="mailto:raffataizacky@gmail.com">Email me <ArrowUpRight size={15} /></a>
+              <button type="button" className="text-cta" onClick={copyEmail}>Copy email <ArrowUpRight size={15} /></button>
             </div>
             <div className="identity-line">
               <span><MapPin size={14} /> Tangerang, Banten</span>
@@ -111,6 +125,9 @@ export default function Home() {
                   <div className="project-tags">
                     {project.stack.map((item) => <span key={item}>{item}</span>)}
                   </div>
+                  <button type="button" className="project-note" onClick={() => showRepositoryNotice(project.title.replace("\n", " "))}>
+                    Repository status <ArrowUpRight size={13} />
+                  </button>
                   <ul>
                     {project.details.map((detail) => <li key={detail}><CheckCircle2 size={15} />{detail}</li>)}
                   </ul>
@@ -169,7 +186,7 @@ export default function Home() {
           <p className="eyebrow">LET&apos;S CONNECT</p>
           <h2>Have an internship<br />opportunity in mind?</h2>
           <div className="contact-actions">
-            <a href="mailto:raffataizacky@gmail.com" className="contact-email">raffataizacky@gmail.com <ArrowUpRight size={22} /></a>
+            <button type="button" onClick={copyEmail} className="contact-email">raffataizacky@gmail.com <ArrowUpRight size={22} /></button>
             <a href="https://www.linkedin.com/in/raffata-izacky-yuargya-aletama-248535388" target="_blank" rel="noreferrer" className="contact-link">LinkedIn profile <ChevronRight size={16} /></a>
           </div>
         </section>
