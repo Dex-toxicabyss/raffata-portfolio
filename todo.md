@@ -1,0 +1,5 @@
+- [x] Generate a restrained technical visual asset set and a distinctive symbol-only personal mark.
+- [x] Build the Apple-style premium one-page portfolio with responsive navigation and project evidence.
+- [ ] Add verified academic project, certification, and contact content without inventing links or results.
+- [x] Prepare GitHub-ready documentation scaffolds for C#, MySQL, and Java projects.
+- [ ] Validate desktop and mobile layouts, then save a delivery checkpoint.
